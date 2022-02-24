@@ -25,6 +25,9 @@ jobs:
           make install_tex
           echo "${HOME}/bin" >> $GITHUB_PATH
 
+      - name: Update tlmgr
+        run: make update_tlmgr
+
       - name: Install LaTeX packages
         run: make install_packages
 
