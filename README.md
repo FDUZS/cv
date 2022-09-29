@@ -1,6 +1,6 @@
-# TIAN Dongdong (田冬冬)'s Curriculum Vitae
+# Shuai Zheng (郑帅)'s Curriculum Vitae
 
-[![Build](https://github.com/seisman/cv/actions/workflows/build.yaml/badge.svg)](https://github.com/seisman/cv/actions/workflows/build.yaml)
+[![Build](https://github.com/FDUZS/cv/actions/workflows/build.yaml/badge.svg)](https://github.com/FDUZS/cv/actions/workflows/build.yaml)
 
 These are the LaTeX sources for my academic CV.
 
@@ -8,8 +8,8 @@ These are the LaTeX sources for my academic CV.
 
 Download my CV:
 
-- [English version](https://github.com/seisman/cv/raw/gh-pages/DTian_cv_en.pdf)
-- [Chinese version](https://github.com/seisman/cv/raw/gh-pages/DTian_cv_cn.pdf)
+- [English version](https://github.com/FDUZS/cv/raw/gh-pages/ShuaiZheng_cv_en.pdf)
+- [Chinese version](https://github.com/FDUZS/cv/raw/gh-pages/ShuaiZheng_cv_cn.pdf)
 
 ## Build
 
@@ -18,18 +18,18 @@ To build the CV, you need to have LaTeX installed. The full LaTeX distribution
 I recommend to install the lightweight [TinyTeX](https://yihui.org/tinytex/)
 (< 100MB).
 
-1. 	Install TinyTeX:
+1. Install TinyTeX:
 
-		curl -sL "https://yihui.org/tinytex/install-bin-unix.sh" | sh
+  curl -sL "https://yihui.org/tinytex/install-bin-unix.sh" | sh
 
-2. 	Install LaTeX packages needed by the CV template:
+1. Install LaTeX packages needed by the CV template:
 
-		make install_packages
+  make install_packages
 
-3. 	Build the CV:
+1. Build the CV:
 
-		make
+  make
 
 ## Acknowledgemnt
 
-The CV template is modified from https://github.com/leouieda/cv.
+The CV template is modified from <https://github.com/leouieda/cv> and <https://github.com/seisman/cv>.
