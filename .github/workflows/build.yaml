@@ -15,21 +15,20 @@ jobs:
 
     steps:
       - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@0.11.0
 
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install TinyTeX
         run: |
           make install_tex
           echo "${HOME}/bin" >> $GITHUB_PATH
 
-      - name: Update tlmgr
-        run: make update_tlmgr
-
       - name: Install LaTeX packages
-        run: make install_packages
+        run: |
+          tlmgr update --self
+          make install_packages
 
       - name: Build CV
         run: make
