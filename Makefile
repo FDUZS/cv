@@ -3,9 +3,6 @@ all: cv_en.pdf cv_cn.pdf clean
 install_tex:
 	curl -sL "https://yihui.org/tinytex/install-bin-unix.sh" | sh
 
-update_tlmgr:
-	tlmgr update --self
-
 install_packages:
 	tlmgr install anyfontsize fontawesome5 ctex datetime enumitem environ etaremune \
 		everysel fancyhdr fmtcount geometry hyperref lastpage ltablex \
